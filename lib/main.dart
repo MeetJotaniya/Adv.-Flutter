@@ -1,3 +1,5 @@
+import 'package:adv_flutter_lab/Lab10/student_view.dart';
+import 'package:adv_flutter_lab/Lab11/user_api_view.dart';
 import 'package:adv_flutter_lab/Lab3/views/crud_view.dart';
 import 'package:adv_flutter_lab/Lab5/data_passed_screen.dart';
 import 'package:adv_flutter_lab/Lab5/first_screen.dart';
@@ -13,6 +15,8 @@ import 'package:adv_flutter_lab/Lab6/reactive.dart';
 import 'package:adv_flutter_lab/Lab6/show_hide_view.dart';
 import 'package:adv_flutter_lab/Lab6/timer.dart';
 import 'package:adv_flutter_lab/Lab7/first_view.dart';
+import 'package:adv_flutter_lab/Lab9/db_view.dart';
+import 'package:adv_flutter_lab/Lab9/student_uni_crud/student_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -47,7 +51,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ShowHideView(),
+      home: UserView(),
       getPages: [
         GetPage(name: "/", page: () => FirstScreen() , curve: Curves.bounceIn),
         GetPage(name: "/loginScreen", page: () => LoginScreen()),
