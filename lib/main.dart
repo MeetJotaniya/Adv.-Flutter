@@ -15,10 +15,16 @@ import 'package:adv_flutter_lab/Lab6/reactive.dart';
 import 'package:adv_flutter_lab/Lab6/show_hide_view.dart';
 import 'package:adv_flutter_lab/Lab6/timer.dart';
 import 'package:adv_flutter_lab/Lab7/first_view.dart';
+import 'package:adv_flutter_lab/Lab8/lab_8_3.dart';
 import 'package:adv_flutter_lab/Lab9/db_view.dart';
 import 'package:adv_flutter_lab/Lab9/student_uni_crud/student_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'Lab15/camer_permission/permission_camera_view.dart';
+import 'Lab15/location_permission/location_permission_controller.dart';
+import 'Lab15/location_permission/location_permission_view.dart';
+import 'Lab15/multiple_permission/multiple_permission_view.dart';
+import 'Lab15/storage_permission/storage_permission_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -51,7 +57,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: UserView(),
+      home: MultiPermissionPage(),
       getPages: [
         GetPage(name: "/", page: () => FirstScreen() , curve: Curves.bounceIn),
         GetPage(name: "/loginScreen", page: () => LoginScreen()),
